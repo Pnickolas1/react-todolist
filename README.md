@@ -1,4 +1,5 @@
 # React Redux To Do List 
+This a very simple `To Do List` webapp built with react, react-redux and styled with Twitter Bootstrap. Project built with `create-react-app` starter template.
 
 ## Instructions: 
 - Clone repo
