@@ -1,6 +1,6 @@
 # React Redux To Do List 
 
 ## Instructions: 
--Clone repo
--npm install
--npm start
+- Clone repo
+- npm install
+- npm start
