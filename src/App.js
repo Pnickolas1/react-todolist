@@ -4,12 +4,26 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import AddTodo from './components/addTodo/';
 import actions from './actions/';
-import TodoList from './components/todoList/index'
+import TodoList from './components/todoList/index';
+import { Navbar } from 'react-bootstrap'
 
 export const App = ({ submitTodo, todos, deleteTodo }) => (
+
+
   <div>
-    <h1>To-Do list</h1>
-    <h4>made with react & react-redux</h4>
+    <Navbar inverse>
+      <Navbar.Header>
+        <Navbar.Brand>
+          <a href="#">To Do List</a>
+        </Navbar.Brand>
+        <Navbar.Toggle />
+      </Navbar.Header>
+      <Navbar.Collapse>
+        <Navbar.Text>
+          Made with React & React Redux
+        </Navbar.Text>
+      </Navbar.Collapse>
+    </Navbar>
     <AddTodo submitTodo={submitTodo} />
     <TodoList todos={todos} deleteTodo={deleteTodo} />
   </div>

@@ -7,7 +7,7 @@ const TodoList = ({ todos, deleteTodo }) => {
   const styles = {
     containerStyle:{
       marginTop: "60px",
-      marginLeft: "60px"
+      marginLeft: "60px",
     },
     panelStyles:{
       width: "600px",
