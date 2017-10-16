@@ -7,10 +7,13 @@ const AddTodo = ({ submitTodo }) => {
 
   const styles = {
     containerStyle:{
-      marginTop: "60px",
+      marginTop: "25px",
       marginLeft: "60px"
+    },
+    btnStyle: {
+      marginLeft: "10px",
     }
-  }
+  };
 
   return (
     <div>
@@ -22,7 +25,6 @@ const AddTodo = ({ submitTodo }) => {
           input.value = '';
           }}
         >
-
           <input
             className="todo-input"
             ref={(element) => { 
@@ -30,9 +32,15 @@ const AddTodo = ({ submitTodo }) => {
             }}      
           />
 
-          <Button bsStyle="primary" bsSize="small" type="submit" className="todo-submit">
-            Add Todo
+          <Button 
+            style={styles.btnStyle}
+            bsStyle="primary"
+            bsSize="small"
+            type="submit"
+            className="todo-submit">
+            Add Item
           </Button>
+
         </form>
       </div>
     </div>
